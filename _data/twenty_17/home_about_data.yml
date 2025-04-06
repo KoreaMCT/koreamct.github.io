@@ -1,32 +1,32 @@
-- inverted: 
-  img: icon-about.jpeg
-  name: Theme, Vision, Mission
-  info: Read more about our Theme, Vision, and Mission
-  link: /about
+# - inverted: 
+#   img: icon-about.jpeg
+#   name: Theme, Vision, Mission
+#   info: Read more about our Theme, Vision, and Mission
+#   link: /about
 
-- inverted: timeline-inverted
+- inverted:
   img: icon-agenda.jpeg
-  name: Agenda
-  info: Check out the agenda
+  name: 세션 어젠다
+  info: 세션 어젠다를 확인해보세요
   link: /agenda
 
-- inverted: 
+- inverted: timeline-inverted
   img: icon-team.jpeg
-  name: Team
-  info: Find out the team members
+  name: 운영진
+  info: Summit 운영진을 확인해보세요
   link: /team
 
-- inverted: timeline-inverted
+- inverted: 
   img: icon-venue.jpeg
-  name: Venue
-  info: Learn more about our location
+  name: 장소
+  info: 행사 장소 주소를 확인해보세요
   link: /venue
 
-- inverted: 
-  img: icon-faq.jpeg
-  name: FAQs
-  info: Have a Question? Many answers can be found right here in our FAQs
-  link: /faqs
+# - inverted: 
+#   img: icon-faq.jpeg
+#   name: FAQs
+#   info: Have a Question? Many answers can be found right here in our FAQs
+#   link: /faqs
 
 # - inverted: timeline-inverted
 #   img: booklet-icon.png
