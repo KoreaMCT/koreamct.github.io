@@ -1,26 +1,40 @@
-- title: Name
-  name: Name-1
-  subtitle: Position
-  img: TBD.jpg
+- title: 김도균
+  name: 김도균
+  # subtitle: Position
+  # img: 유승호.jpg
   thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+  # alt: Picture of TBD
+  # topic: Topic
+  # description: More Info
 
-- title: Name
-  name: Name-2
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+- title: 박민진
+  name: 박민진
+  thumbnail: 박민진.jpg
 
-- title: Name
-  name: Name-3
-  subtitle: Position
-  img: TBD.jpg
+- title: 안성진
+  name: 안성진
+  thumbnail: 안성진.jpg
+
+- title: 우진환
+  name: 우진환
   thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+
+- title: 유승호
+  name: 유승호
+  thumbnail: 유승호.jpg
+
+- title: 윤금재
+  name: 윤금재
+  thumbnail: 윤금재.jpg
+
+- title: 전대호
+  name: 전대호
+  thumbnail: 전대호.jpg
+
+- title: 진미나
+  name: 진미나
+  thumbnail: 진미나.jpg
+
+- title: Joshua Jones
+  name: Joshua Jones
+  thumbnail: TBD.jpg
