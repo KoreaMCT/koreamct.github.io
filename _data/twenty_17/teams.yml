@@ -2,7 +2,7 @@
   name: 김도균
   # subtitle: Position
   # img: 유승호.jpg
-  thumbnail: TBD.jpg
+  thumbnail: 김도균.jpg
   # alt: Picture of TBD
   # topic: Topic
   # description: More Info
@@ -17,7 +17,7 @@
 
 - title: 우진환
   name: 우진환
-  thumbnail: TBD.jpg
+  thumbnail: 우진환.png
 
 - title: 유승호
   name: 유승호
@@ -37,4 +37,4 @@
 
 - title: Joshua Jones
   name: Joshua Jones
-  thumbnail: TBD.jpg
+  thumbnail: Joshua Jones.png

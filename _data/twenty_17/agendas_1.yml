@@ -27,7 +27,7 @@
   info: "<b><u>TBD | 최재형</u></b><br><br>TBD"
 
 - time: 15:10 - 15:50
-  info: "<b><u>TBD | 우진환</u></b><br><br>TBD"
+  info: "<b><u>Blueprint에서 Deployment Stack으로 진화 | 우진환</u></b><br><br>이 세션에서는 Azure Blueprint의 다음 단계인 Deployment Stack을 활용하여 인프라를 코드(IaC)로 구현하는 방법을 소개합니다. 또한, Azure Container Apps를 이용한 실습 데모와 함께, Azure Container Instance와 Azure Logic Apps를 연계하여 GIF 파일을 자동 생성하는 재미있고 실용적인 데모도 함께 선보입니다."
 
 - time: 16:05 - 16:45
   info: "<b><u>마이크로소프트 ESI 프로그램 소개 | 최훈</u></b><br><br>마이크로소프트에서 제공하는 ESI (Enterprise Skills Initiative) 프로그램에 대한 간략한 소개"

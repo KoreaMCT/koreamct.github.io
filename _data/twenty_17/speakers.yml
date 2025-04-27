@@ -1,26 +1,142 @@
-- title: Name
-  name: Name-1
-  subtitle: Position
+- title: 김도균
+  name: 김도균
+  subtitle: MVP & MCT
+  img: 김도균.jpg
+  thumbnail: 김도균.jpg
+  alt: Picture of 김도균
+  topic: TBD
+  description: TBD
+
+- title: 박민진
+  name: 박민진
+  subtitle: MLSA & MCT
+  img: 박민진.jpg
+  thumbnail: 박민진.jpg
+  alt: Picture of 박민진
+  topic: "IaC in Azure: ARM vs Bicep vs Terraform"
+  description: 클라우드 인프라와 DevOps에 열정을 가진 Microsoft Learn Student Ambassador(MLSA)입니다. MLSA는 Microsoft 기술을 중심으로 활동하는 글로벌 학생 커뮤니티로, 현재 이 프로그램의 일원으로 활동하고 있습니다. NGO 단체의 백엔드 및 인프라 팀에서 활동한 경험이 있으며, 현재는 KISTI 과제에서 Kubernetes 기반 배포 아키텍처 설계와 서비스 파이프라인 구축을 담당하고 있습니다. 실무에 가까운 다양한 경험을 통해 IaC와 자동화에 대한 깊은 이해를 쌓기 위해 꾸준히 노력하고 있습니다.
+
+- title: 배준오
+  name: 배준오
+  subtitle: MVP
+  img: 배준오.jpg
+  thumbnail: 배준오.jpg
+  alt: Picture of 배준오
+  topic: "기술을 '보이게' 가르치는 법: MCT를 위한 강의 비법"
+  description: 2007년부터 Microsoft PowerPoint MVP로 활동하며, 비즈니스 스킬, 사내강사 양성, 역량 교육, 컨설팅 일을 하고 있습니다.
+
+- title: 안성진
+  name: 안성진
+  subtitle: MCT
+  img: 안성진.jpg
+  thumbnail: 안성진.jpg
+  alt: Picture of 안성진
+  topic: MCT Program 최근 업데이트 내용
+  description: 정보기술의 가파른 발전 속도로 인해 개인이 창출할 수 있는 부가가치의 크기는 앞으로 점점 더 커질 것이고, 그 흐름을 타보기 위해서 고군분투하고 있는 프리랜서입니다. 기술적으로는 AI, Data, 그리고 Microsoft Copilot 기술 스택에 관심이 많습니다.
+
+- title: 우진환
+  name: 우진환
+  subtitle: Microsoft
+  img: 우진환.png
+  thumbnail: 우진환.png
+  alt: Picture of 우진환
+  topic: Blueprint에서 Deployment Stack으로 진화
+  description: 2012년부터 MCT로 활동하고 있으며, 현재 한국마이크로소프트에서 MTT (Microsoft Technical Trainer)로 일하고 있습니다.
+
+- title: 유승호
+  name: 유승호
+  subtitle: Microsoft
+  img: 유승호.jpg
+  thumbnail: 유승호.jpg
+  alt: Picture of 유승호
+  topic: 수업할 때 쓸만한 스토리 텔링 프레임워크 3종 셋트
+  description: "유승호(SungHo.You)
+
+Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
+
+<p>Interested in Azure Cloud, Azure AI, Azure DevOps, Visual Studio, .NET, C#, and Developer and MCT ecosystem</p>
+<p>Former Microsoft MVP (2005–2019, 15 consecutive years)</p>
+<p>Former CEO/CTO of Developians, Former CTO of XDNSoft</p>
+<p>Facebook Groups:</p>
+<p>- “I’m Developer” – https://www.facebook.com/groups/waglnet/</p>
+<p>- “Korea MCT” – https://www.facebook.com/groups/koreamct/</p>
+<p>LinkedIn: linkedin.com/in/hahahaysh/</p>
+<p>이메일: hahaysh@hotmail.com</p>"
+
+
+- title: 유저스틴
+  name: 유저스틴
+  subtitle: Microsoft
+  img: Justin Yoo.png
+  thumbnail: Justin Yoo.png
+  alt: Picture of 유저스틴
+  topic: 어느날 갑자기 MCP가 내 앱으로 들어왔다 - MCP 서버/클라이언트 손쉽게 개발/활용하기
+  description: 마이크로소프트에서 수석 디벨로퍼 아드보캇으로 일하고 있습니다. 자나깨나 개발자 생산성 향상을 위해 좀 더 편한 뭔가 없을까를 고민합니다.
+
+- title: 윤금재
+  name: 윤금재
+  subtitle: MLSA & MCT
+  img: 윤금재.jpg
+  thumbnail: 윤금재.jpg
+  alt: Picture of 윤금재
+  topic: Semantic Kernel과 MCP로 나만의 자비스 만들기
+  description: 2025년 신규 MCT이자, 대학생이자, 사회복무요원(방위)입니다. 대구에서 학생과 직장인을 상대로 여러 행사를 진행하며 Microsoft의 기술을 공유하고 있습니다. 
+
+- title: 전대호
+  name: 전대호
+  subtitle: MCT
+  img: 전대호.jpg
+  thumbnail: 전대호.jpg
+  alt: Picture of 전대호
+  topic: 효과적인 Copilot Prompt 작성 방법
+  description: 2022~2014까지 Windows Server Flatform MCT로 Windows Server 기술지원 및 Hyper-v 서버 가상화, VDI 프로젝트 PM으로 근무 했습니다. 약간의 경력 단절(?) 후 2025년 MCT를 재 취득 하고, Microsoft 365 Copilot을 활용한 업무생산성 향상을 위한 AI 활용 강의를 진행하고 있습니다. 
+
+- title: 진미나
+  name: 진미나
+  subtitle: MVP & MCT
+  img: 진미나.jpg
+  thumbnail: 진미나.jpg
+  alt: Picture of 진미나
+  topic: 앞으로 더 커질 Microsoft 커넥터 기술과 확장성
+  description: "<p>Mina JIN</p> 
+
+<p>Citizen Developer specialized in Power Apps & Microsoft 365 </p>
+
+
+<p>활동내용</p>
+<p>- 현 MVP & MCT</p> 
+<p>- DDD Seoul 운영진</p>
+<p>- MCT Summit 운영진</p>
+
+
+<p>관심분야</p>
+<p>- Power Apps, Microsoft 365</p>
+<p>- low-code Coding, Python</p>
+" 
+
+- title: 최재형
+  name: 최재형
+  subtitle: Microsoft
   img: TBD.jpg
   thumbnail: TBD.jpg
   alt: Picture of TBD
   topic: Topic
   description: More Info
 
-- title: Name
-  name: Name-2
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+- title: 최훈
+  name: 최훈
+  subtitle: Microsoft
+  img: 최훈.png
+  thumbnail: 최훈.png
+  alt: Picture of 최훈
+  topic: 마이크로소프트 ESI 프로그램 소개
+  description: 한국 마이크로소프트에서 Training Program Manager 일을 하고 있으며, 고객 기술 역량 개발 프로그램을 담당합니다. 
 
-- title: Name
-  name: Name-3
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+- title: Joshua Jones
+  name: JoshuaJones
+  subtitle: 合同会社VoltEdge Learning
+  img: Joshua Jones.png
+  thumbnail: Joshua Jones.png
+  alt: Picture of Joshua Jones
+  topic: Finding Opportunities as an MCT
+  description: Joshua는 일본에 거주중인 MCT입니다. Copilot 365 쪽의 Microsoft MVP이며, 현재 MCT Community Lead로도 활동하고 있습니다. Joshua는 다양한 분야에 열정을 가지고 있지만, 특히 AI 분야에 많은 열정을 가지고 있습니다.
