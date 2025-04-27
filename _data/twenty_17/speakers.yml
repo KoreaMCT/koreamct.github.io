@@ -1,15 +1,19 @@
 - title: 김도균
   name: 김도균
   subtitle: MVP & MCT
+  org: (주) 늘품플러스, Korea MVP
   img: 김도균.jpg
   thumbnail: 김도균.jpg
   alt: Picture of 김도균
-  topic: TBD
-  description: TBD
+  topic: 독립 기술 크리에이터로서 생성형 AI 시대에 생존하기 위한 나만의 전략
+  description: "<p>Azure로의 여정을 시작한 개인이나 조직을 위한 경험과 지식을 전파하는 독립 기술 크리에이터.</p>
+<p>23년차 MCT이며, Azure 분야로 13번째 MVP 어워드 수상.</p>
+<p>처음 배우는 애저를 비롯 40여권의 저서 및 번역서 출간</p>"
 
 - title: 박민진
   name: 박민진
   subtitle: MLSA & MCT
+  org: MLSA & MCT
   img: 박민진.jpg
   thumbnail: 박민진.jpg
   alt: Picture of 박민진
@@ -19,6 +23,7 @@
 - title: 배준오
   name: 배준오
   subtitle: MVP
+  org: MVP
   img: 배준오.jpg
   thumbnail: 배준오.jpg
   alt: Picture of 배준오
@@ -28,6 +33,7 @@
 - title: 안성진
   name: 안성진
   subtitle: MCT
+  org: 인디거라지, MCT 
   img: 안성진.jpg
   thumbnail: 안성진.jpg
   alt: Picture of 안성진
@@ -37,6 +43,7 @@
 - title: 우진환
   name: 우진환
   subtitle: Microsoft
+  org: Microsoft
   img: 우진환.png
   thumbnail: 우진환.png
   alt: Picture of 우진환
@@ -46,6 +53,7 @@
 - title: 유승호
   name: 유승호
   subtitle: Microsoft
+  org: Microsoft
   img: 유승호.jpg
   thumbnail: 유승호.jpg
   alt: Picture of 유승호
@@ -67,6 +75,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 - title: 유저스틴
   name: 유저스틴
   subtitle: Microsoft
+  org: Microsoft
   img: Justin Yoo.png
   thumbnail: Justin Yoo.png
   alt: Picture of 유저스틴
@@ -75,6 +84,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 
 - title: 윤금재
   name: 윤금재
+  subtitle: MLSA & MCT
   subtitle: MLSA & MCT
   img: 윤금재.jpg
   thumbnail: 윤금재.jpg
@@ -85,6 +95,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 - title: 전대호
   name: 전대호
   subtitle: MCT
+  org: 프리랜서 / 코파일럿 클럽
   img: 전대호.jpg
   thumbnail: 전대호.jpg
   alt: Picture of 전대호
@@ -94,6 +105,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 - title: 진미나
   name: 진미나
   subtitle: MVP & MCT
+  org: MVP & MCT (한국소프트웨어서비스 프리랜서)
   img: 진미나.jpg
   thumbnail: 진미나.jpg
   alt: Picture of 진미나
@@ -117,6 +129,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 - title: 최재형
   name: 최재형
   subtitle: Microsoft
+  org: Microsoft
   img: TBD.jpg
   thumbnail: TBD.jpg
   alt: Picture of TBD
@@ -126,6 +139,7 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 - title: 최훈
   name: 최훈
   subtitle: Microsoft
+  org: Microsoft
   img: 최훈.png
   thumbnail: 최훈.png
   alt: Picture of 최훈
@@ -134,7 +148,8 @@ Microsoft Technical Trainer – Commercial Skilling Delivery, Microsoft Korea
 
 - title: Joshua Jones
   name: JoshuaJones
-  subtitle: 合同会社VoltEdge Learning
+  subtitle: MVP & MCT
+  org: 合同会社VoltEdge Learning
   img: Joshua Jones.png
   thumbnail: Joshua Jones.png
   alt: Picture of Joshua Jones
