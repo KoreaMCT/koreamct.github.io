@@ -8,19 +8,19 @@
   img: icon-agenda.jpeg
   name: 세션 어젠다
   info: 세션 어젠다를 확인해보세요
-  link: /agenda
+  link: /2025/agenda
 
 - inverted: timeline-inverted
   img: icon-team.jpeg
   name: 운영진
   info: Summit 운영진을 확인해보세요
-  link: /team
+  link: /2025/team
 
 - inverted: 
   img: icon-venue.jpeg
   name: 장소
   info: 행사 장소 주소를 확인해보세요
-  link: /venue
+  link: /2025/venue
 
 # - inverted: 
 #   img: icon-faq.jpeg
