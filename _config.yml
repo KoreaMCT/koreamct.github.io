@@ -1,6 +1,6 @@
-title: Korea MCT Summit
+title: Korea MCT
 description: > # this means to ignore newlines until "baseurl:"
-  Microsoft 기술을 가르치는 강사들의 성장과 교류를 위한 행사 
+  한국에서 활동하는 MCT(Microsoft Certified Trainer)를 위한 커뮤니티
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "koreamct.github.io" # the base hostname & protocol for your site
 # Build settings
