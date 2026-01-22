@@ -1,0 +1,32 @@
+# Korea MCT Summit 2026 Sponsors
+# Format:
+# - name: "Sponsor Name"
+#   level: "platinum" or "gold" or "silver" or "bronze"
+#   logo: "logo.png"  # Place in css/2026_style/img/sponsors/
+#   description: "Sponsor description"
+#   website: "https://..."
+
+sponsors:
+  platinum:
+    - name: "Platinum Sponsor 1"
+      logo: "placeholder.png"
+      description: "Platinum level sponsor"
+      website: "https://"
+
+  gold:
+    - name: "Gold Sponsor 1"
+      logo: "placeholder.png"
+      description: "Gold level sponsor"
+      website: "https://"
+
+  silver:
+    - name: "Silver Sponsor 1"
+      logo: "placeholder.png"
+      description: "Silver level sponsor"
+      website: "https://"
+
+  bronze:
+    - name: "Bronze Sponsor 1"
+      logo: "placeholder.png"
+      description: "Bronze level sponsor"
+      website: "https://"

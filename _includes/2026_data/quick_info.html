@@ -1,0 +1,16 @@
+<!-- Quick Info Section -->
+<section class="quick-info-section">
+    <div class="container">
+        <div class="row">
+            {% for item in site.data.twenty_26.event_info.quick_info %}
+            <div class="col-md-4 mb-4">
+                <div class="quick-info-card">
+                    <div class="info-icon">{{ item.icon }}</div>
+                    <h3 class="info-label">{{ item.label }}</h3>
+                    <p class="info-value">{{ item.value }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

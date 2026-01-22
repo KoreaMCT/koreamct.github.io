@@ -1,0 +1,26 @@
+<!-- Speakers Section -->
+<section id="speakers" class="speakers-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">발표자</h2>
+        <div class="row">
+            {% for speaker in site.data.twenty_26.speakers %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="/css/2026_style/img/speaker/{{ speaker.img }}" alt="{{ speaker.alt }}">
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">{{ speaker.name }}</h3>
+                        <p class="speaker-title">{{ speaker.subtitle }}</p>
+                        <p class="speaker-org">{{ speaker.org }}</p>
+                        <p class="speaker-topic"><strong>📌 {{ speaker.topic }}</strong></p>
+                        <div class="speaker-description">
+                            {{ speaker.description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

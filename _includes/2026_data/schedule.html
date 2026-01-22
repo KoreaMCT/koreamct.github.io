@@ -1,0 +1,50 @@
+<!-- Schedule Section -->
+<section id="schedule" class="schedule-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">행사 일정</h2>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="schedule-card">
+                    <h3 class="schedule-day">{{ site.data.twenty_26.schedule.day1.title }}</h3>
+                    <p class="schedule-date">{{ site.data.twenty_26.schedule.day1.date }}</p>
+                    <div class="schedule-items">
+                        {% for session in site.data.twenty_26.schedule.day1.sessions %}
+                        <div class="schedule-item">
+                            <div class="session-time">{{ session.time }}</div>
+                            <div class="session-details">
+                                <h4 class="session-title">{{ session.title }}</h4>
+                                {% if session.speaker %}
+                                <p class="session-speaker">{{ session.speaker }}</p>
+                                {% endif %}
+                                <p class="session-location">📍 {{ session.location }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="schedule-card">
+                    <h3 class="schedule-day">{{ site.data.twenty_26.schedule.day2.title }}</h3>
+                    <p class="schedule-date">{{ site.data.twenty_26.schedule.day2.date }}</p>
+                    <div class="schedule-items">
+                        {% for session in site.data.twenty_26.schedule.day2.sessions %}
+                        <div class="schedule-item">
+                            <div class="session-time">{{ session.time }}</div>
+                            <div class="session-details">
+                                <h4 class="session-title">{{ session.title }}</h4>
+                                {% if session.speaker %}
+                                <p class="session-speaker">{{ session.speaker }}</p>
+                                {% endif %}
+                                <p class="session-location">📍 {{ session.location }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

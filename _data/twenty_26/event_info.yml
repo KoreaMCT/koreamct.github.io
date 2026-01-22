@@ -1,0 +1,40 @@
+# Korea MCT Summit 2026 Event Information
+event_title: "Korea MCT Summit 2026"
+event_date: "2026년 5월 29일 ~ 30일"  # Update with actual date
+event_location: "한국마이크로소프트"  # Update with venue
+event_description: "한국의 Microsoft Certified Trainers를 위한 최고의 기술 컨퍼런스"
+registration_url: "https://event-us.kr/koreamct/event/119709"  # Update with registration URL
+
+# Hero section
+hero:
+  headline: "Korea MCT Summit 2026"
+  subheadline: "최고의 기술 전문가들과 함께하는 특별한 만남"
+  cta_text: "행사 등록하기"
+  cta_url: "https://event-us.kr/koreamct/event/119709"
+
+# About section
+about:
+  title: "Summit에 대해"
+  description: "Korea MCT Summit은 Microsoft Certified Trainer들이 모여 최신 기술 트렌드를 공유하고 교육 전문성을 높이는 자리입니다."
+  features:
+    - icon: "💡"
+      title: "최신 기술"
+      description: "Azure, Microsoft 365 Copilot 등 최신 기술 세션"
+    - icon: "👥"
+      title: "네트워킹"
+      description: "국내 최고의 MCT들과의 교류 기회"
+    - icon: "📚"
+      title: "지식 공유"
+      description: "실무 경험과 교육 노하우 공유"
+
+# Quick info
+quick_info:
+  - label: "행사 예정일"
+    value: "2026년 5월 29일-30일"
+    icon: "📅"
+  - label: "행사 장소"
+    value: "한국마이크로소프트"
+    icon: "📍"
+  - label: "참가 대상"
+    value: "MCT / Alumni / Microsoft 임직원"
+    icon: "🎯"

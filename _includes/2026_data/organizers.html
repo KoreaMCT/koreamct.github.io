@@ -1,0 +1,24 @@
+<!-- Organizers Section -->
+<section id="organizers" class="organizers-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">운영진</h2>
+        <div class="row">
+            {% for member in site.data.twenty_26.organizers.team %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="/css/2026_style/img/team/{{ member.img }}" alt="{{ member.name }}">
+                    </div>
+                    <h3 class="organizer-name">{{ member.name }}</h3>
+                    <p class="organizer-role">{{ member.role }}</p>
+                    <div class="organizer-contact">
+                        {% if member.social != "#" %}
+                        <a href="{{ member.social }}" target="_blank" class="contact-link">🔗 Profile</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

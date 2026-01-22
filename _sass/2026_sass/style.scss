@@ -1,0 +1,806 @@
+// 2026 Modern and Clean Theme
+// Color Palette
+$primary-color: #0078d4;
+$secondary-color: #00a4ef;
+$accent-color: #6c5ce7;
+$text-dark: #2d3436;
+$text-light: #636e72;
+$bg-light: #f5f6fa;
+$bg-white: #ffffff;
+$border-color: #e0e6ed;
+$success-color: #00b894;
+$warning-color: #fdcb6e;
+
+// Typography
+$font-family-base: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+// Responsive breakpoints (matching Bootstrap)
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+
+// Utility functions
+@mixin transition($properties: all, $duration: 0.3s, $timing: ease-in-out) {
+    transition: $properties $duration $timing;
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin shadow-light {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@mixin shadow-medium {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+@mixin shadow-hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+// ============================================
+// Global Styles
+// ============================================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-dark;
+    background-color: $bg-white;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    @include transition;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+// ============================================
+// Navigation Bar
+// ============================================
+.navbar {
+    background-color: transparent;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid transparent;
+    @include transition;
+
+    &.scrolled {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom-color: $border-color;
+        @include shadow-light;
+    }
+}
+
+.navbar-brand {
+    @include flex-center;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $text-dark;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+}
+
+.brand-text {
+    background: linear-gradient(135deg, $primary-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $text-light;
+        margin-left: 1.5rem;
+        font-weight: 500;
+        @include transition;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &.btn-register {
+            background-color: $primary-color;
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.5rem;
+            margin-left: 1rem;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+}
+
+// ============================================
+// Hero Section
+// ============================================
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+    min-height: 60vh;
+    @include flex-center(column);
+    background: linear-gradient(135deg, $bg-light 0%, $bg-white 100%);
+    border-bottom: 2px solid $border-color;
+}
+
+.hero-background {
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba($primary-color, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, $primary-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: $text-light;
+    margin-bottom: 2rem;
+}
+
+// ============================================
+// Buttons
+// ============================================
+.btn {
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    @include transition;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $secondary-color;
+            @include shadow-medium;
+        }
+    }
+
+    &.btn-lg {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    &.btn-md {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    &.btn-outline-primary {
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}
+
+// ============================================
+// Quick Info Section
+// ============================================
+.quick-info-section {
+    padding: 3rem 0;
+    background-color: $bg-white;
+}
+
+.quick-info-card {
+    background-color: $bg-light;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    @include shadow-light;
+    @include transition;
+
+    &:hover {
+        @include shadow-medium;
+        transform: translateY(-4px);
+    }
+}
+
+.info-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info-label {
+    font-size: 0.95rem;
+    color: $text-light;
+    margin-bottom: 0.5rem;
+}
+
+.info-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-dark;
+}
+
+// ============================================
+// Section Styling
+// ============================================
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: $text-light;
+    line-height: 1.8;
+}
+
+// Alternating background colors
+.about-section {
+    background-color: $bg-white;
+}
+
+.schedule-section {
+    background-color: $bg-light;
+}
+
+.speakers-section {
+    background-color: $bg-white;
+}
+
+.organizers-section {
+    background-color: $bg-light;
+}
+
+// ============================================
+// Feature Cards (About Section)
+// ============================================
+.feature-card {
+    background-color: $bg-white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid $primary-color;
+    @include shadow-light;
+    @include transition;
+    text-align: center;
+
+    &:hover {
+        @include shadow-medium;
+        transform: translateY(-4px);
+    }
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: $text-dark;
+}
+
+.feature-card p {
+    color: $text-light;
+}
+
+// ============================================
+// Schedule Section
+// ============================================
+.schedule-card {
+    background-color: $bg-white;
+    padding: 2rem;
+    border-radius: 1rem;
+    @include shadow-light;
+}
+
+.schedule-day {
+    font-size: 1.5rem;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-date {
+    color: $text-light;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.session-time {
+    flex-shrink: 0;
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 100px;
+    text-align: center;
+}
+
+.session-details h4 {
+    margin-bottom: 0.5rem;
+    color: $text-dark;
+}
+
+.session-speaker {
+    color: $secondary-color;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.session-location {
+    color: $text-light;
+    font-size: 0.9rem;
+}
+
+// ============================================
+// Speaker Cards
+// ============================================
+.speaker-card {
+    background-color: $bg-light;
+    border-radius: 1rem;
+    overflow: hidden;
+    @include shadow-light;
+    @include transition;
+
+    &:hover {
+        @include shadow-hover;
+        transform: translateY(-6px);
+    }
+}
+
+.speaker-image {
+    overflow: hidden;
+    height: 250px;
+    background-color: $border-color;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+    }
+}
+
+.speaker-card:hover .speaker-image img {
+    transform: scale(1.05);
+}
+
+.speaker-info {
+    padding: 1.5rem;
+}
+
+.speaker-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 0.25rem;
+}
+
+.speaker-title {
+    color: $primary-color;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.speaker-org {
+    color: $text-light;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.speaker-topic {
+    color: $accent-color;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.speaker-description {
+    color: $text-light;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+// ============================================
+// Organizer Cards
+// ============================================
+.organizer-card {
+    background-color: $bg-white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    @include shadow-light;
+    @include transition;
+
+    &:hover {
+        @include shadow-medium;
+    }
+}
+
+.organizer-image {
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $border-color;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.organizer-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 0.5rem;
+}
+
+.organizer-role {
+    color: $primary-color;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.organizer-contact {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact-link {
+    padding: 0.5rem 1rem;
+    background-color: $bg-light;
+    border-radius: 0.5rem;
+    color: $primary-color;
+    font-size: 0.9rem;
+    @include transition;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+// ============================================
+// Sponsors Section
+// ============================================
+.sponsors-section {
+    background-color: $bg-light;
+    padding: 4rem 0;
+}
+
+.tier-title {
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sponsor-card {
+    background-color: $bg-white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    @include shadow-light;
+    @include transition;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+
+    &:hover {
+        @include shadow-hover;
+        transform: translateY(-4px);
+    }
+
+    &.platinum {
+        border-top: 4px solid #FFD700;
+        border-radius: 1rem;
+    }
+
+    &.gold {
+        border-top: 4px solid #FDB913;
+    }
+
+    &.silver {
+        border-top: 4px solid #C0C0C0;
+    }
+
+    &.bronze {
+        border-top: 4px solid #CD7F32;
+    }
+}
+
+.sponsor-logo {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.sponsor-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 0.5rem;
+}
+
+.sponsor-description {
+    color: $text-light;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.sponsor-link {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 0.95rem;
+    @include transition;
+    padding: 0.5rem 1rem;
+    border: 2px solid $primary-color;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+// ============================================
+// Footer
+// ============================================
+.footer {
+    background: linear-gradient(135deg, $text-dark 0%, #34495e 100%);
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+}
+
+.footer-section p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.footer-section a {
+    color: white;
+    @include transition;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.footer-section ul {
+    list-style: none;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    @include transition;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    color: #bdc3c7;
+
+    p {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: white;
+        @include transition;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+// ============================================
+// Responsive Design
+// ============================================
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            margin-left: 0;
+            padding: 0.5rem 0;
+        }
+    }
+
+    .hero-section {
+        padding: 3rem 0;
+        min-height: 40vh;
+    }
+
+    section {
+        padding: 2.5rem 0;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+    }
+
+    .session-time {
+        min-width: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        &.btn-lg {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+    }
+
+    section {
+        padding: 1.5rem 0;
+    }
+
+    .navbar-logo {
+        height: 32px;
+    }
+}

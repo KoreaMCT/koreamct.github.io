@@ -1,0 +1,94 @@
+<!-- Sponsors Section -->
+<section id="sponsors" class="sponsors-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">후원사</h2>
+        
+        {% if site.data.twenty_26.sponsors.platinum %}
+        <div class="sponsor-tier mb-5">
+            <h3 class="tier-title text-center mb-4">Platinum Sponsors</h3>
+            <div class="row">
+                {% for sponsor in site.data.twenty_26.sponsors.platinum %}
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="sponsor-card platinum">
+                        <div class="sponsor-logo">
+                            <img src="/css/2026_style/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                        </div>
+                        <h3 class="sponsor-name">{{ sponsor.name }}</h3>
+                        <p class="sponsor-description">{{ sponsor.description }}</p>
+                        {% if sponsor.website %}
+                        <a href="{{ sponsor.website }}" target="_blank" class="sponsor-link">Visit Website →</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if site.data.twenty_26.sponsors.gold %}
+        <div class="sponsor-tier mb-5">
+            <h3 class="tier-title text-center mb-4">Gold Sponsors</h3>
+            <div class="row">
+                {% for sponsor in site.data.twenty_26.sponsors.gold %}
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="sponsor-card gold">
+                        <div class="sponsor-logo">
+                            <img src="/css/2026_style/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                        </div>
+                        <h3 class="sponsor-name">{{ sponsor.name }}</h3>
+                        <p class="sponsor-description">{{ sponsor.description }}</p>
+                        {% if sponsor.website %}
+                        <a href="{{ sponsor.website }}" target="_blank" class="sponsor-link">Visit Website →</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if site.data.twenty_26.sponsors.silver %}
+        <div class="sponsor-tier mb-5">
+            <h3 class="tier-title text-center mb-4">Silver Sponsors</h3>
+            <div class="row">
+                {% for sponsor in site.data.twenty_26.sponsors.silver %}
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="sponsor-card silver">
+                        <div class="sponsor-logo">
+                            <img src="/css/2026_style/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                        </div>
+                        <h3 class="sponsor-name">{{ sponsor.name }}</h3>
+                        <p class="sponsor-description">{{ sponsor.description }}</p>
+                        {% if sponsor.website %}
+                        <a href="{{ sponsor.website }}" target="_blank" class="sponsor-link">Visit Website →</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if site.data.twenty_26.sponsors.bronze %}
+        <div class="sponsor-tier">
+            <h3 class="tier-title text-center mb-4">Bronze Sponsors</h3>
+            <div class="row">
+                {% for sponsor in site.data.twenty_26.sponsors.bronze %}
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="sponsor-card bronze">
+                        <div class="sponsor-logo">
+                            <img src="/css/2026_style/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                        </div>
+                        <h3 class="sponsor-name">{{ sponsor.name }}</h3>
+                        <p class="sponsor-description">{{ sponsor.description }}</p>
+                        {% if sponsor.website %}
+                        <a href="{{ sponsor.website }}" target="_blank" class="sponsor-link">Visit Website →</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>

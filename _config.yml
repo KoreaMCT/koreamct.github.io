@@ -9,7 +9,7 @@ markdown: kramdown
 facebook:
   app_id: 
 
-logo: "/css/2016_style/img/icon-mct-badge.png"
+logo: "/css/2017_style/img/logos/MCT-badge.png"
 
 social: 
   name: Korea MCT Facebook Group
@@ -18,6 +18,10 @@ social:
 google_site_verification: googleXXXXXXXXXXXXXXXX.html
 
 include: ['2025', '2026']
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 plugins:
   - jekyll-sitemap

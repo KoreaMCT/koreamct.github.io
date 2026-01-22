@@ -1,0 +1,23 @@
+# Korea MCT Summit 2026 Organizers/Team
+# Format:
+# - name: "Name"
+#   role: "Role"
+#   img: "name.jpg"  # Place image in /css/2026_style/img/team/
+#   email: "email@example.com"
+#   social: "https://..."
+
+team:
+  - name: "Team Member 1"
+    role: "Event Director"
+    img: "placeholder.jpg"
+    social: "#"
+  
+  - name: "Team Member 2"
+    role: "Program Chair"
+    img: "placeholder.jpg"
+    social: "#"
+
+  - name: "Team Member 3"
+    role: "Operations"
+    img: "placeholder.jpg"
+    social: "#"

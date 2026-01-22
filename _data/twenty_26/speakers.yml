@@ -1,0 +1,23 @@
+# Korea MCT Summit 2026 Speakers
+# Add speakers as they are confirmed
+# Example format:
+# - title: "Speaker Name"
+#   name: "Speaker Name"
+#   subtitle: "Title/Credentials"
+#   org: "Organization"
+#   img: "speaker_name.jpg"  # Place image in /css/2026_style/img/speaker/
+#   thumbnail: "speaker_name.jpg"
+#   alt: "Picture of Speaker Name"
+#   topic: "Session Topic"
+#   description: "<p>Speaker bio here</p>"
+
+# Placeholder - to be updated with actual speakers
+- title: "Speaker 정보 업데이트 예정"
+  name: "Speaker Name"
+  subtitle: "MCT"
+  org: "Organization"
+  img: "placeholder.jpg"
+  thumbnail: "placeholder.jpg"
+  alt: "Speaker placeholder"
+  topic: "Session Topic Coming Soon"
+  description: "<p>Speaker information will be updated as it becomes available.</p>"
