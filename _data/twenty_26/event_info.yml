@@ -3,14 +3,14 @@ event_title: "Korea MCT Summit 2026"
 event_date: "2026년 5월 29일 ~ 30일"  # Update with actual date
 event_location: "한국마이크로소프트"  # Update with venue
 event_description: "한국의 Microsoft Certified Trainers를 위한 최고의 기술 컨퍼런스"
-registration_url: "https://event-us.kr/koreamct/event/119709"  # Update with registration URL
+registration_url: "https://event-us.kr/koreamct/event/121809"  # Update with registration URL
 
 # Hero section
 hero:
   headline: "Korea MCT Summit 2026"
   subheadline: "최고의 기술 전문가들과 함께하는 특별한 만남"
   cta_text: "행사 등록하기"
-  cta_url: "https://event-us.kr/koreamct/event/119709"
+  cta_url: "https://event-us.kr/koreamct/event/121809"
 
 # About section
 about:
