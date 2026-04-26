@@ -23,13 +23,16 @@
                     <tbody>
                         {% for row in day.rows %}
                         {% if row.type == "full" %}
-                        {% assign row_spk = site.data.twenty_26.speakers | where: "name", row.speaker | first %}
+                        {% assign row_spk = nil %}
+                        {% if row.speaker and row.speaker != "" %}
+                          {% assign row_spk = site.data.twenty_26.speakers | where: "name", row.speaker | first %}
+                        {% endif %}
                         {% if row_spk and row_spk.topic != "" %}
                           {% assign row_title = row_spk.topic %}
                         {% else %}
                           {% assign row_title = row.title %}
                         {% endif %}
-                        {% if row_spk %}{% assign row_slug = row.speaker | strip | replace: " ", "-" | url_encode %}{% endif %}
+                        {% assign row_slug = row.speaker | strip | replace: " ", "-" %}
                         <tr class="srow-{{ row.class | default: 'session' }}">
                             <td class="cell-time">{{ row.time }}</td>
                             <td colspan="2" class="cell-full{% if row_spk %} cell-clickable{% endif %}">
@@ -45,14 +48,17 @@
                             {% assign tracks = "track1,track2" | split: "," %}
                             {% for track_key in tracks %}
                             {% assign track = row[track_key] %}
-                            {% assign trk_spk = site.data.twenty_26.speakers | where: "name", track.speaker | first %}
+                            {% assign trk_spk = nil %}
+                            {% if track.speaker and track.speaker != "" %}
+                              {% assign trk_spk = site.data.twenty_26.speakers | where: "name", track.speaker | first %}
+                            {% endif %}
                             {% if trk_spk and trk_spk.topic != "" %}
                               {% assign trk_title = trk_spk.topic %}
                             {% else %}
                               {% assign trk_title = track.title %}
                             {% endif %}
                             {% if track.workshop %}{% assign trk_title = "(워크숍) " | append: trk_title %}{% endif %}
-                            {% if trk_spk %}{% assign trk_slug = track.speaker | strip | replace: " ", "-" | url_encode %}{% endif %}
+                            {% assign trk_slug = track.speaker | strip | replace: " ", "-" %}
                             <td class="cell-track {% if forloop.first %}track-a{% else %}track-b{% endif %}{% if trk_spk %} cell-clickable{% endif %}">
                                 {% if trk_spk %}<a href="/2026/speakers/{{ trk_slug }}/" class="cell-link">{% endif %}
                                 <div class="cell-title">{{ trk_title }}</div>

@@ -7,7 +7,7 @@
 
     {% include 2026_data/navigation.html %}
 
-    {% assign speaker = page.speaker %}
+    {% assign speaker = site.data.twenty_26.speakers | where: "name", page.speaker_name | first %}
 
     <main class="speaker-detail-page">
       <div class="container">

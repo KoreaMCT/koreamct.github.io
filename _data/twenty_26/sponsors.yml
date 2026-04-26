@@ -9,31 +9,31 @@ sponsors:
   diamond:
     - name: "Microsoft"
       logo: "diamond-microsoft.png"
-      description: "Diamond level partner"
+      description: "Diamond level sponsor"
       website: "https://www.microsoft.com"
 
   platinum:
     - name: "KOSS"
       logo: "platinum-KOSS.png"
-      description: "Platinum level partner"
+      description: "Platinum level sponsor"
       website: "https://ikss.kr/"
 
   gold:
     - name: "한국트레이노케이트"
       logo: "gold-trianocate.png"
-      description: "Gold level partner"
+      description: "Gold level sponsor"
       website: "https://trainocate.co.kr/"
     - name: "go deploy"
       logo: "gold-go-deploy.png"
-      description: "Gold level partner"
+      description: "Gold level sponsor"
       website: "https://godeploy.com/"
     - name: "STK"
       logo: "gold-STK.png"
-      description: "Gold level partner"
+      description: "Gold level sponsor"
       website: "https://stkcorp.co.kr/"
 
   bronze:
     - name: "한빛미디어"
       logo: "bronze-hanbit.png"
-      description: "Bronze level partner"
+      description: "Bronze level sponsor"
       website: "https://www.hanbit.co.kr/"
