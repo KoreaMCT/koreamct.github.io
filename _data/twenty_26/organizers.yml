@@ -7,17 +7,38 @@
 #   social: "https://..."
 
 team:
-  - name: "Team Member 1"
-    role: "Event Director"
-    img: "placeholder.jpg"
-    social: "#"
-  
-  - name: "Team Member 2"
-    role: "Program Chair"
-    img: "placeholder.jpg"
+  - name: "Joshua Jones"
+    img: "Joshua Jones.png"
     social: "#"
 
-  - name: "Team Member 3"
-    role: "Operations"
-    img: "placeholder.jpg"
+  - name: "박민진"
+    img: "박민진.jpg"
+    social: "#"
+
+  - name: "안성진"
+    img: "안성진.jpg"
+    social: "#"
+
+  - name: "우진환"
+    img: "우진환.png"
+    social: "#"
+
+  - name: "유승호"
+    img: "유승호.jpg"
+    social: "#"
+
+  - name: "윤금재"
+    img: "윤금재.jpg"
+    social: "#"
+
+  - name: "이은주"
+    img: "이은주.jpg"
+    social: "#"
+
+  - name: "전대호"
+    img: "전대호.jpg"
+    social: "#"
+
+  - name: "진미나"
+    img: "진미나.jpg"
     social: "#"

@@ -346,68 +346,229 @@ section {
 // ============================================
 // Schedule Section
 // ============================================
-.schedule-card {
-    background-color: $bg-white;
-    padding: 2rem;
-    border-radius: 1rem;
+.schedule-day-block {
+    border-radius: 0.75rem;
+    overflow: hidden;
     @include shadow-light;
+    background-color: $bg-white;
+    border: 1px solid $border-color;
 }
 
-.schedule-day {
-    font-size: 1.5rem;
-    color: $primary-color;
-    margin-bottom: 0.5rem;
-}
-
-.schedule-date {
-    color: $text-light;
-    margin-bottom: 1.5rem;
-}
-
-.schedule-items {
+.schedule-day-header {
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    color: white;
+    padding: 1.1rem 1.75rem;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.schedule-item {
-    display: flex;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid $border-color;
+.schedule-day-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
 
-    &:last-child {
+.schedule-day-date {
+    font-size: 1rem;
+    opacity: 0.92;
+    font-weight: 500;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.92rem;
+    margin-bottom: 0;
+    table-layout: fixed;
+
+    thead th {
+        background-color: darken($primary-color, 10%);
+        color: white;
+        padding: 0.85rem 1rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.4px;
+        border-bottom: 2px solid darken($primary-color, 18%);
+
+        &.col-time {
+            width: 130px;
+        }
+
+        &.col-track {
+            width: calc((100% - 130px) / 2);
+        }
+    }
+
+    tbody tr {
+        @include transition(background-color, 0.2s);
+
+        &:hover td:not(.cell-time) {
+            background-color: rgba($primary-color, 0.04);
+        }
+    }
+
+    td {
+        padding: 0.95rem 1.1rem;
+        border-bottom: 1px solid $border-color;
+        vertical-align: middle;
+    }
+
+    tbody tr:last-child td {
         border-bottom: none;
-        padding-bottom: 0;
+    }
+
+    td + td {
+        border-left: 1px solid $border-color;
     }
 }
 
-.session-time {
-    flex-shrink: 0;
-    background-color: $primary-color;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+.cell-time {
     font-weight: 600;
-    font-size: 0.9rem;
-    min-width: 100px;
+    font-size: 0.85rem;
+    color: $text-dark;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f7f9fc;
+    font-variant-numeric: tabular-nums;
+}
+
+.cell-full {
     text-align: center;
 }
 
-.session-details h4 {
-    margin-bottom: 0.5rem;
+.cell-track {
+    vertical-align: top !important;
+
+    &.track-a {
+        background-color: #fdfdff;
+    }
+
+    &.track-b {
+        background-color: #f7faff;
+    }
+}
+
+.cell-title {
+    font-weight: 600;
     color: $text-dark;
+    line-height: 1.45;
+    font-size: 0.95rem;
 }
 
-.session-speaker {
-    color: $secondary-color;
+.cell-speaker {
+    color: $primary-color;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
     font-weight: 500;
-    margin-bottom: 0.25rem;
 }
 
-.session-location {
-    color: $text-light;
-    font-size: 0.9rem;
+// Row type accents
+.srow-keynote {
+    .cell-time {
+        background-color: #d6e9ff;
+        color: darken($primary-color, 20%);
+    }
+    .cell-full {
+        background: linear-gradient(135deg, #e8f3ff 0%, #f0f7ff 100%);
+    }
+    .cell-title {
+        color: darken($primary-color, 15%);
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+    .cell-speaker {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: darken($primary-color, 10%);
+    }
+}
+
+.srow-sponsor {
+    .cell-time {
+        background-color: #fff3d4;
+        color: #8a6500;
+    }
+    .cell-full {
+        background: linear-gradient(135deg, #fff8e1 0%, #fffaeb 100%);
+    }
+    .cell-title {
+        color: #b8860b;
+        letter-spacing: 0.6px;
+        font-weight: 700;
+    }
+}
+
+.srow-break {
+    .cell-time {
+        background-color: #d4edda;
+        color: #1b5e20;
+    }
+    .cell-full {
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1faf2 100%);
+    }
+    .cell-title {
+        color: #2e7d32;
+        font-weight: 600;
+    }
+}
+
+.srow-session {
+    .cell-full {
+        background-color: #fafbfd;
+    }
+}
+
+@media (max-width: $medium) {
+    .schedule-day-header {
+        padding: 0.9rem 1.1rem;
+    }
+
+    .schedule-day-title {
+        font-size: 1.15rem;
+    }
+
+    .schedule-day-date {
+        font-size: 0.85rem;
+    }
+
+    .schedule-table {
+        font-size: 0.82rem;
+        table-layout: auto;
+
+        thead th {
+            padding: 0.6rem 0.5rem;
+            font-size: 0.82rem;
+
+            &.col-time {
+                width: 80px;
+            }
+        }
+
+        td {
+            padding: 0.6rem 0.65rem;
+        }
+    }
+
+    .cell-time {
+        font-size: 0.75rem;
+    }
+
+    .cell-title {
+        font-size: 0.85rem;
+    }
+
+    .cell-speaker {
+        font-size: 0.78rem;
+    }
+
+    .srow-keynote .cell-title {
+        font-size: 0.95rem;
+    }
 }
 
 // ============================================
@@ -764,14 +925,6 @@ section {
 
     section {
         padding: 2.5rem 0;
-    }
-
-    .schedule-item {
-        flex-direction: column;
-    }
-
-    .session-time {
-        min-width: auto;
     }
 
     .footer-content {

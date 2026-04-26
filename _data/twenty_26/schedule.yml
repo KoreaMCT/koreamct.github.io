@@ -1,64 +1,126 @@
 # Korea MCT Summit 2026 Schedule
-# Day 1
+# row types: "full" (spans both tracks) | "split" (two separate tracks)
+# row classes for full rows: "keynote" | "sponsor" | "break" | "session"
+#
+# For rows/tracks that have a "speaker" field, the session title is looked up
+# from _data/twenty_26/speakers.yml (speaker.topic) at render time.
+# Use "title" only as a fallback when no matching speaker topic exists,
+# or for non-speaker rows (sponsor, break, labels).
+# Use "workshop: true" to prepend "(워크숍) " to the looked-up topic.
+
 day1:
   title: "Day 1"
-  date: "2026년 5월 29일"
-  sessions:
-    - time: "10:00 - 10:30"
-      title: "등록"
-      speaker: ""
-      location: "Lobby"
-    - time: "10:30 - 11:00"
-      title: "Opening Ceremony"
-      speaker: ""
-      location: "Main Hall"
-    - time: "11:00 - 12:00"
-      title: "Session 1"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "12:00 - 13:00"
-      title: "점심"
-      speaker: ""
-      location: "Cafeteria"
-    - time: "13:00 - 14:00"
-      title: "Session 2"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "14:00 - 15:00"
-      title: "Session 3"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "15:00 - 16:00"
-      title: "Session 4"
-      speaker: "Speaker Name"
-      location: "Room A"
+  date: "2026년 5월 29일 (금)"
+  rows:
+    - time: "10:00 ~ 10:20"
+      type: "full"
+      class: "keynote"
+      title: "Keynote"
+      speaker: "Rohan Kapoor"
+    - time: "10:25 ~ 10:45"
+      type: "full"
+      class: "session"
+      title: "TBD"
+    - time: "11:00 ~ 11:40"
+      type: "split"
+      track1:
+        speaker: "William Zhang"
+      track2:
+        # topic is TBD — kept as fallback title
+        speaker: "Joshua Jones"
+    - time: "11:55 ~ 12:15"
+      type: "full"
+      class: "session"
+      title: "TBD"
+    - time: "12:15 ~ 13:15"
+      type: "full"
+      class: "break"
+      title: "점심 식사"
+    - time: "13:15 ~ 13:55"
+      type: "split"
+      track1:
+        speaker: "김진석"
+      track2:
+        # topic is TBD — kept as fallback title
+        title: "TBD"
+        speaker: "이소영"
+    - time: "14:10 ~ 14:30"
+      type: "full"
+      class: "session"
+      title: "TBD"
+    - time: "14:35 ~ 14:55"
+      type: "full"
+      class: "session"
+      speaker: "박민욱"
+    - time: "15:10 ~ 16:40"
+      type: "split"
+      track1:
+        workshop: true
+        speaker: "유저스틴"
+      track2:
+        workshop: true
+        speaker: "최정우"
 
-# Day 2
 day2:
   title: "Day 2"
-  date: "2026년 5월 30일"
-  sessions:
-    - time: "10:00 - 11:00"
-      title: "Session 5"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "11:00 - 12:00"
-      title: "Session 6"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "12:00 - 12:30"
-      title: "점심"
-      speaker: ""
-      location: "Cafeteria"
-    - time: "13:00 - 14:00"
-      title: "Session 7"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "14:00 - 15:00"
-      title: "Session 8"
-      speaker: "Speaker Name"
-      location: "Room A"
-    - time: "15:00 - 16:00"
-      title: "Closing Ceremony & Networking"
-      speaker: ""
-      location: "Main Hall"
+  date: "2026년 5월 30일 (토)"
+  rows:
+    - time: "10:00 ~ 10:20"
+      type: "full"
+      class: "keynote"
+      title: "Keynote"
+      speaker: "안성진"
+    - time: "10:25 ~ 10:45"
+      type: "full"
+      class: "session"
+      title: "TBD"
+    - time: "11:00 ~ 11:40"
+      type: "split"
+      track1:
+        speaker: "박결"
+      track2:
+        speaker: "김도균"
+    - time: "11:55 ~ 12:15"
+      type: "full"
+      class: "session"
+      title: "TBD"
+    - time: "12:15 ~ 13:15"
+      type: "full"
+      class: "break"
+      title: "점심 식사"
+    - time: "13:15 ~ 13:55"
+      type: "split"
+      track1:
+        speaker: "박민진"
+      track2:
+        speaker: "최영락"
+    - time: "14:10 ~ 14:30"
+      type: "full"
+      class: "session"
+      speaker: "박민욱"
+    - time: "14:35 ~ 15:15"
+      type: "split"
+      track1:
+        speaker: "이정구"
+      track2:
+        speaker: "배준오"
+    - time: "15:30 ~ 16:30"
+      type: "split"
+      track1:
+        workshop: true
+        speaker: "구병국"
+      track2:
+        workshop: true
+        speaker: "허석"
+    - time: "16:35 ~ 16:55"
+      type: "full"
+      class: "session"
+      speaker: "전규리"
+    - time: "17:00 ~ 17:20"
+      type: "full"
+      class: "session"
+      title: "경품 추첨"
+    - time: "18:00 ~ 20:00"
+      type: "full"
+      class: "break"
+      title: "저녁 식사 및 네트워킹"

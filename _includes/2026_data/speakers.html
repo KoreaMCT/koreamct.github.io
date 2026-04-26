@@ -4,21 +4,24 @@
         <h2 class="section-title text-center mb-5">발표자</h2>
         <div class="row">
             {% for speaker in site.data.twenty_26.speakers %}
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <img src="/css/2026_style/img/speaker/{{ speaker.img }}" alt="{{ speaker.alt }}">
-                    </div>
-                    <div class="speaker-info">
-                        <h3 class="speaker-name">{{ speaker.name }}</h3>
-                        <p class="speaker-title">{{ speaker.subtitle }}</p>
-                        <p class="speaker-org">{{ speaker.org }}</p>
-                        <p class="speaker-topic"><strong>📌 {{ speaker.topic }}</strong></p>
-                        <div class="speaker-description">
-                            {{ speaker.description }}
+            {% assign slug = speaker.name | strip | replace: " ", "-" | url_encode %}
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <a href="/2026/speakers/{{ slug }}/" class="speaker-card-link" aria-label="{{ speaker.name }} 상세 정보">
+                    <div class="speaker-card">
+                        <div class="speaker-image">
+                            <img src="/css/2026_style/img/speaker/{{ speaker.img }}" alt="{{ speaker.alt }}">
+                            <div class="speaker-image-overlay" aria-hidden="true">
+                                <span class="speaker-image-overlay-icon">+</span>
+                                <span class="speaker-image-overlay-text">View profile</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">{{ speaker.name }}</h3>
+                            <p class="speaker-title">{{ speaker.subtitle }}</p>
+                            <p class="speaker-org">{{ speaker.org }}</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             {% endfor %}
         </div>

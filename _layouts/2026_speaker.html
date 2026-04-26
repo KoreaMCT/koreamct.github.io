@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  {% include 2026_data/head.html %}
+
+  <body id="page-top" class="speaker-detail-body">
+
+    {% include 2026_data/navigation.html %}
+
+    {% assign speaker = page.speaker %}
+
+    <main class="speaker-detail-page">
+      <div class="container">
+
+        <article class="speaker-detail-card">
+          <div class="row g-0">
+            <div class="col-md-4 speaker-detail-image-wrap">
+              <img src="/css/2026_style/img/speaker/{{ speaker.img }}"
+                   alt="{{ speaker.alt | default: speaker.name }}"
+                   class="speaker-detail-image">
+            </div>
+            <div class="col-md-8 speaker-detail-body-wrap">
+              <h1 class="speaker-detail-name">{{ speaker.name }}</h1>
+              {% if speaker.subtitle and speaker.subtitle != "" %}
+              <p class="speaker-detail-subtitle">{{ speaker.subtitle }}</p>
+              {% endif %}
+              {% if speaker.org and speaker.org != "" and speaker.org != "-" %}
+              <p class="speaker-detail-org">{{ speaker.org }}</p>
+              {% endif %}
+
+              {% if speaker.bio and speaker.bio != "" %}
+              <section class="speaker-detail-section">
+                <h2 class="speaker-detail-heading">About</h2>
+                <p class="speaker-detail-bio">{{ speaker.bio }}</p>
+              </section>
+              {% endif %}
+            </div>
+          </div>
+
+          {% if speaker.topic and speaker.topic != "" %}
+          <section class="speaker-detail-talk">
+            <span class="speaker-detail-eyebrow">발표 주제</span>
+            <h2 class="speaker-detail-topic">{{ speaker.topic }}</h2>
+            {% if speaker.description and speaker.description != "" %}
+            <p class="speaker-detail-description">{{ speaker.description }}</p>
+            {% endif %}
+          </section>
+          {% endif %}
+        </article>
+
+      </div>
+    </main>
+
+    {% include 2026_data/footer.html %}
+    {% include 2026_data/scripts.html %}
+
+  </body>
+</html>

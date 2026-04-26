@@ -1,50 +1,72 @@
 <!-- Schedule Section -->
 <section id="schedule" class="schedule-section">
-    <div class="container">
+    <div class="container-fluid px-3 px-lg-5">
         <h2 class="section-title text-center mb-5">행사 일정</h2>
-        
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="schedule-card">
-                    <h3 class="schedule-day">{{ site.data.twenty_26.schedule.day1.title }}</h3>
-                    <p class="schedule-date">{{ site.data.twenty_26.schedule.day1.date }}</p>
-                    <div class="schedule-items">
-                        {% for session in site.data.twenty_26.schedule.day1.sessions %}
-                        <div class="schedule-item">
-                            <div class="session-time">{{ session.time }}</div>
-                            <div class="session-details">
-                                <h4 class="session-title">{{ session.title }}</h4>
-                                {% if session.speaker %}
-                                <p class="session-speaker">{{ session.speaker }}</p>
-                                {% endif %}
-                                <p class="session-location">📍 {{ session.location }}</p>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
+
+        {% assign days = "day1,day2" | split: "," %}
+        {% for day_key in days %}
+        {% assign day = site.data.twenty_26.schedule[day_key] %}
+        <div class="schedule-day-block{% unless forloop.last %} mb-5{% endunless %}">
+            <div class="schedule-day-header">
+                <span class="schedule-day-title">{{ day.title }}</span>
+                <span class="schedule-day-date">{{ day.date }}</span>
             </div>
-            
-            <div class="col-lg-6 mb-4">
-                <div class="schedule-card">
-                    <h3 class="schedule-day">{{ site.data.twenty_26.schedule.day2.title }}</h3>
-                    <p class="schedule-date">{{ site.data.twenty_26.schedule.day2.date }}</p>
-                    <div class="schedule-items">
-                        {% for session in site.data.twenty_26.schedule.day2.sessions %}
-                        <div class="schedule-item">
-                            <div class="session-time">{{ session.time }}</div>
-                            <div class="session-details">
-                                <h4 class="session-title">{{ session.title }}</h4>
-                                {% if session.speaker %}
-                                <p class="session-speaker">{{ session.speaker }}</p>
-                                {% endif %}
-                                <p class="session-location">📍 {{ session.location }}</p>
-                            </div>
-                        </div>
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th class="col-time">시간</th>
+                            <th class="col-track">Track A</th>
+                            <th class="col-track">Track B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in day.rows %}
+                        {% if row.type == "full" %}
+                        {% assign row_spk = site.data.twenty_26.speakers | where: "name", row.speaker | first %}
+                        {% if row_spk and row_spk.topic != "" %}
+                          {% assign row_title = row_spk.topic %}
+                        {% else %}
+                          {% assign row_title = row.title %}
+                        {% endif %}
+                        {% if row_spk %}{% assign row_slug = row.speaker | strip | replace: " ", "-" | url_encode %}{% endif %}
+                        <tr class="srow-{{ row.class | default: 'session' }}">
+                            <td class="cell-time">{{ row.time }}</td>
+                            <td colspan="2" class="cell-full{% if row_spk %} cell-clickable{% endif %}">
+                                {% if row_spk %}<a href="/2026/speakers/{{ row_slug }}/" class="cell-link">{% endif %}
+                                <span class="cell-title">{{ row_title }}</span>
+                                {% if row.speaker %}<span class="cell-speaker"> &mdash; {{ row.speaker }}</span>{% endif %}
+                                {% if row_spk %}</a>{% endif %}
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr class="srow-split">
+                            <td class="cell-time">{{ row.time }}</td>
+                            {% assign tracks = "track1,track2" | split: "," %}
+                            {% for track_key in tracks %}
+                            {% assign track = row[track_key] %}
+                            {% assign trk_spk = site.data.twenty_26.speakers | where: "name", track.speaker | first %}
+                            {% if trk_spk and trk_spk.topic != "" %}
+                              {% assign trk_title = trk_spk.topic %}
+                            {% else %}
+                              {% assign trk_title = track.title %}
+                            {% endif %}
+                            {% if track.workshop %}{% assign trk_title = "(워크숍) " | append: trk_title %}{% endif %}
+                            {% if trk_spk %}{% assign trk_slug = track.speaker | strip | replace: " ", "-" | url_encode %}{% endif %}
+                            <td class="cell-track {% if forloop.first %}track-a{% else %}track-b{% endif %}{% if trk_spk %} cell-clickable{% endif %}">
+                                {% if trk_spk %}<a href="/2026/speakers/{{ trk_slug }}/" class="cell-link">{% endif %}
+                                <div class="cell-title">{{ trk_title }}</div>
+                                {% if track.speaker %}<div class="cell-speaker">{{ track.speaker }}</div>{% endif %}
+                                {% if trk_spk %}</a>{% endif %}
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        {% endif %}
                         {% endfor %}
-                    </div>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </div>
+        {% endfor %}
     </div>
 </section>
