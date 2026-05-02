@@ -337,11 +337,20 @@ section {
   font-weight: 700; }
 
 .srow-break .cell-time {
+  background-color: #ffd7cc;
+  color: #9a2f10; }
+.srow-break .cell-full {
+  background: linear-gradient(135deg, #ffe5dc 0%, #fff2ed 100%); }
+.srow-break .cell-title {
+  color: #b93a12;
+  font-weight: 600; }
+
+.srow-meal .cell-time {
   background-color: #d4edda;
   color: #1b5e20; }
-.srow-break .cell-full {
+.srow-meal .cell-full {
   background: linear-gradient(135deg, #e8f5e9 0%, #f1faf2 100%); }
-.srow-break .cell-title {
+.srow-meal .cell-title {
   color: #2e7d32;
   font-weight: 600; }
 
@@ -763,9 +772,15 @@ section {
   color: #8a6500; }
 
 .schedule-table .srow-break .cell-clickable:hover {
+  background-color: rgba(185, 58, 18, 0.12) !important;
+  box-shadow: inset 0 -3px 0 0 #b93a12; }
+.schedule-table .srow-break .cell-clickable:hover .cell-title {
+  color: #9a2f10; }
+
+.schedule-table .srow-meal .cell-clickable:hover {
   background-color: rgba(46, 125, 50, 0.12) !important;
   box-shadow: inset 0 -3px 0 0 #2e7d32; }
-.schedule-table .srow-break .cell-clickable:hover .cell-title {
+.schedule-table .srow-meal .cell-clickable:hover .cell-title {
   color: #1b5e20; }
 
 .schedule-table .cell-link:focus-visible {

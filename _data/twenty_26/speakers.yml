@@ -56,6 +56,40 @@
   description: "AI 춘추 전국 시대에 살아갈 지혜는 어디에 있을까? 사짜 산업 혁명에서 살아 남을 지혜를 찾는 여정을 소개."
   bio: "Microsoft MVP, Microsoft 공인 Azure 트레이너, 늘품플러스 기술이사"
 
+- name: "김영욱"
+  img: "김영욱.jpg"
+  alt: "김영욱"
+  subtitle: "MCT | MVP"
+  org: "Hello AI"
+  topic: "OpenClaw 써본 썰 푼 (Feat. Azure): 삽질부터 동작까지"
+  description: "OpenClaw를 Microsoft Azure에서 실행하는 건 생각보다 어렵지 않았습니다.
+                오히려 더 고민이 되었던 건, “이걸 어떻게 활용할 수 있을까?”였습니다. <br>
+
+                이 세션에서는 설정 과정 대신, 실제 사용하면서 들었던 질문들을 중심으로 이야기합니다.
+                이걸 내 일상에 어떻게 녹여낼 수 있을지, 클라우드에서 운영하는 의미는 무엇인지, 그리고 보안적으로 어디까지 신경 써야 하는지에 대한 고민을 공유합니다. <br>
+
+                가볍게 시작한 프로젝트가, 결국 “왜 쓰는가”에 대한 고민으로 이어진 경험을 함께 나눕니다."
+  bio: "(현) Hello AI 대표 <br>
+    (전) Microsoft 엔지니어 (2008~2021) <br>
+    (현) Microsoft Regional Director <br>
+    (현) Microsoft AI MVP <br>
+    (현) 국가과학기술인력개발원 객원 교수 <br>
+
+    서울시립대학교 컴퓨터 과학 석사 <br>
+    웹 접근성 2.0 표준 자문위원 <br>
+    한국방송통신대학교 출강(2020년) <br>
+    인천재능대학교 출강(2021년) <br>
+    국가과학기술인력개발원 KIRD 최우수강사 2018, 2020 <br>"
+
+- name: "김재수"
+  img: "김재수.jpg"
+  alt: "김재수"
+  subtitle: "STK"
+  org: "STK"
+  topic: "MCT를 위한 새로운 수익 엔진: '글로벌 자격증' 패키지로 만드는 고부가가치 교육 채널"
+  description: "Microsoft Fundamental 과정과 자격증을 결합하여 추가 수익을 창출할 수 있는 구조와 운영 방법을 소개합니다. 또한 실제 적용 가능한 모델과 인센티브 혜택을 통해 즉시 실행 가능한 교육 비즈니스 기회를 제시합니다."
+  bio: "STK AI Learning 사업팀 과장"
+
 - name: "김진석"
   img: "김진석.jpg"
   alt: "김진석"
@@ -69,19 +103,23 @@
   img: "박결.jpg"
   alt: "박결"
   subtitle: "MCT"
-  org: "-"
+  org: "Trainocate"
   topic: "초보자를 위한 Copilot Studio 교육, 저는 이렇게 합니다."
   description: "Copilot Studio를 입문자, 비개발자 눈높이에서 효과적으로 전달하기 위해 고민했던 내용을 소개합니다. (※주의 - 몹시 개인적 경험에 근거함)"
-  bio: "공부와 토론 그리고 소통을 좋아하는 박결입니다."
+  bio: "IT 엔지니어가 꿈이었지만, 어쩌다 보니 IT 강사의 길로 들어섰습니다. 그런데.. 생각보다 잘 맞아서 즐기며 강의하고 있습니다."
 
 - name: "박민욱"
-  img: "박민욱.jpg"
+  img: "박민욱.jpeg"
   alt: "박민욱"
   subtitle: "MCT"
   org: "KT"
-  topic: "MCT가 알려주는, Physical MCT가 되는 방법"
-  description: "Physical MCT가 되기 위한 핵심 요소를 분야별로 설명합니다. 운동방법(저항운동) 및 적용 가능한 식습관을 다룹니다."
-  bio: "KT에서 Azure 관련 교육을 담당하고 있습니다."
+  topic: "BX: MCT 인프라 점검과 피지컬 최적화 전략"
+  description: "MCT 인프라의 최적화와 효율, 그들의 생존과 실전, 습관과 변화를 위한 MCT BX (Body Transformation)의 첫 걸음!"
+  bio: "기술로 세상을 바꾸는 MCT 여러분의 가장 든든한 건강 파트너가 되고 싶은 발표자입니다. <br>
+
+        KT 인재실 AX교육팀에서 교육 기획을 하며 쌓은 노하우에 웨이트 트레이닝(트레이너), 수영(수상안전분야) 등 전문적인 체육 활동 경험을 더했습니다. <br>
+
+        이번 세션에서는 단순한 이론이 아니라, 강사들의 삶의 질을 높일 수 있는 '생존 체력'과 '건강 전략'을 가족의 마음으로 전달하겠습니다. <br>"
 
 - name: "박민진"
   img: "박민진.jpg"
@@ -109,6 +147,41 @@
   topic: "MCT 프로그램 업데이트 및 MTM 등록 방법"
   description: "2026년 하반기 부터 변경 예정인 MCT 프로그램 관련 규정 및 소식과, MCT가 필수로 알아야 하는 MTM 등록 방법에 대해 살펴봅니다."
   bio: "안녕하세요. 신뢰할 수 있는 정보와 안정적인 소프트웨어 솔루션을 제공할 수 있는 사람이 되기 위해 하루 하루 살아가고 있는 안성진입니다."
+
+- name: "유승호"
+  img: "유승호.jpg"
+  alt: "유승호"
+  subtitle: "MCT"
+  org: "Microsoft"
+  topic: "AI 에이전트 첫발 – Microsoft Foundry, VS Code, 그리고 GitHub Copilot"
+  description: "최근 AI 에이전트는 빠르게 발전하고 있지만, <br>
+                처음 Microsoft Foundry를 접했을 때 <br>
+                전체 개발 흐름을 한 번에 이해하기는 쉽지 않습니다. <br>
+
+                이 시간에는 Microsoft Foundry를 출발점으로, <br>
+                VS Code, AI Toolkit, GitHub Copilot까지 이어지는 <br>
+                AI 에이전트 개발 흐름을 간단한 데모 중심으로 살펴봅니다. <br>
+
+                Foundry에서 프로젝트와 에이전트를 생성하고, <br>
+                다양한 최신 모델을 확인한 뒤 포털에서 직접 에이전트를 구성해봅니다. <br>
+
+                그리고, Visual Studio Code의 Foundry Toolkit을 활용해 <br>
+                로컬에서 리소스를 통합적으로 관리하고, <br>
+                코드 기반으로 에이전트를 개발하는 과정을 다룹니다. <br>"
+
+  bio: "현재 Microsoft Korea에서 Technical Trainer로 활동하며, <br>
+        Azure Cloud, Azure AI, Azure DevOps, Visual Studio, .NET, C# 등 <br>
+        Microsoft 개발자 플랫폼 전반에 깊은 관심을 가지고 있으며, <br>
+        Developer 및 MCT 생태계와의 연결에도 지속적으로 기여하고 있습니다. <br>
+
+        Facebook 커뮤니티 <br>
+        ‘나는 개발자다’와 ‘Korea MCT’를 운영하며 <br>
+        개발자 및 기술 커뮤니티 활성화에도 힘쓰고 있습니다. <br>
+
+        과거 15년 연속 Microsoft MVP(2005–2019)로 선정되었으며, <br>
+        3번의 스타트업을 운영한적이 있구요, <br>
+        3남매의 아빠, 사랑하는 아내의 남편입니다. <br>"
+
 
 - name: "유저스틴"
   img: "유저스틴.png"
@@ -145,6 +218,19 @@
   topic: "Microsoft와 Nvidia가 함께하는 퀴즈 세션"
   description: "Microsoft와 Nvidia가 협력 이후 필수적으로 알고 있어야 할 기술적 내용엔 대한 퀴즈 세션입니다. Microsoft AI 기술에 대한 내용도 함께 다루며, 약 10-13문제로 이루어진 퀴즈 세션으로 경품도 준비될 예정입니다."
   bio: "Technical Trainer at Microsoft"
+
+- name: "정석원"
+  img: "정석원.jpg"
+  alt: "정석원"
+  subtitle: "KOSS"
+  org: "KOSS"
+  topic: "\"Artist & Stage\" (부제: AI시대, 기술교육의 동반성장을 위한 KOSS와 MCT의 상생전략)"
+  description: "MS는 원천기술과 시나리오를 제공하는 제작사의 역할을,  MCT는 그 시나리오와 기술을 태도로 맘껏 재량을 뽐내고 청중을 감동시키는 ‘아티스트’역할을, 그리고  KOSS는 무대를 기획하고, 관객을 매칭시키며, 아티스트들을 빛나게 하는 기획자의 역할을 합니다. <br>
+
+                삼위일체(三位一體)가 되었을 때 비로소 바람직한 공연이 연출되고, 청중(고객)은 감동하며, 감동은 큰 물결을 이루게 된다는 것이 제가 주장하고자 하는 골자(骨子)입니다. <br>
+                
+                곧, 삼위가 동반 성장하는 첩경이라고 저는 판단하고 있습니다. <br>"
+  bio: "한국소프트웨어서비스(Korea Software Service, 이하 KOSS) 영업대표"
 
 - name: "최영락"
   img: "최영락.jpg"

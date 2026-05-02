@@ -589,6 +589,15 @@ section {
 
 .srow-break {
     .cell-full, .cell-time {
+        background-color: #ffe5dc;
+    }
+    .cell-title {
+        color: #b93a12;
+    }
+}
+
+.srow-meal {
+    .cell-full, .cell-time {
         background-color: #e8f5e9;
     }
     .cell-title {

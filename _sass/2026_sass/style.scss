@@ -505,6 +505,20 @@ section {
 
 .srow-break {
     .cell-time {
+        background-color: #ffd7cc;
+        color: #9a2f10;
+    }
+    .cell-full {
+        background: linear-gradient(135deg, #ffe5dc 0%, #fff2ed 100%);
+    }
+    .cell-title {
+        color: #b93a12;
+        font-weight: 600;
+    }
+}
+
+.srow-meal {
+    .cell-time {
         background-color: #d4edda;
         color: #1b5e20;
     }
