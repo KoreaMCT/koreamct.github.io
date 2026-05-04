@@ -32,6 +32,12 @@ sponsors:
       description: "Gold level sponsor"
       website: "https://stkcorp.co.kr/"
 
+  silver:
+    - name: "OpenSG"
+      logo: "silver-opensg.png"
+      description: "Silver level sponsor"
+      website: "https://www.opensg.net/"
+
   bronze:
     - name: "한빛미디어"
       logo: "bronze-hanbit.png"
