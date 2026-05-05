@@ -67,25 +67,23 @@ day2:
   title: "Day 2"
   date: "2026년 5월 30일 (토)"
   rows:
-    - time: "10:00 ~ 10:20"
+    - time: "10:00 ~ 10:30"
       type: "full"
       class: "keynote"
       title: "Keynote"
       speaker: "안성진"
-    - time: "10:30 ~ 10:50"
-      type: "full"
-      class: "session"
-      title: "TBD"
-    - time: "11:00 ~ 11:40"
+    - time: "10:40 ~ 11:20"
       type: "split"
       track1:
         speaker: "박결"
       track2:
         speaker: "김도균"
-    - time: "11:50 ~ 12:10"
-      type: "full"
-      class: "session"
-      title: "TBD"
+    - time: "11:30 ~ 12:10"
+      type: "split"
+      track1:
+        title: TBD
+      track2:
+        title: TBD
     - time: "12:10 ~ 13:30"
       type: "full"
       class: "meal"
