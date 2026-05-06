@@ -56,6 +56,18 @@
   description: "AI 춘추 전국 시대에 살아갈 지혜는 어디에 있을까? 사짜 산업 혁명에서 살아 남을 지혜를 찾는 여정을 소개."
   bio: "Microsoft MVP, Microsoft 공인 Azure 트레이너, 늘품플러스 기술이사"
 
+- name: "김성미"
+  img: "김성미.jpg"
+  alt: "김성미"
+  subtitle: "Microsoft"
+  org: "Microsoft"
+  topic: "이타적인 & 가장 효율적인 배움 ‘커뮤니티’"
+  description: "1년여전 <br>
+                Microsoft AI Community 'AI 놀이터'를 만들고 함께 커가는 여정 이야기 <br>
+
+                (커뮤니티를 만든 배경, 과정의 여러움, 나누며 나의 레슨런, 앞으로의 계획과 비전..) "
+  bio: "Microsoft AI Community 'AI놀이터' 운영 리더"
+
 - name: "김영욱"
   img: "김영욱.jpg"
   alt: "김영욱"
@@ -241,6 +253,15 @@
   topic: "Microsoft와 Nvidia가 함께하는 퀴즈 세션"
   description: "Microsoft와 Nvidia가 협력 이후 필수적으로 알고 있어야 할 기술적 내용엔 대한 퀴즈 세션입니다. Microsoft AI 기술에 대한 내용도 함께 다루며, 약 10-13문제로 이루어진 퀴즈 세션으로 경품도 준비될 예정입니다."
   bio: "Technical Trainer at Microsoft"
+
+- name: "전대호"
+  img: "전대호.jpg"
+  alt: "전대호"
+  subtitle: "MCT | MVP"
+  org: "캔로봇"
+  topic: "Copilot Cowork 때문에 이제 꿀잠자요, 강의 준비 끝~"
+  description: "Copilot Cowork를 이용한 강의 교안, 고객 마춤 프롬프트 및 예시, 실습파일 및 각종 가이드 문서를 한방에 만들어 커스텀 강의를 빠르게 준비 할수 있는 방법 소개"
+  bio: "Microsoft 365 Copilot MVP, MCT로 Microsoft 365, Microsoft 365 Copilot, Copilot Studio 강의 및 커뮤니티 활동을 하고 있습니다."
 
 - name: "정석원"
   img: "정석원.jpg"

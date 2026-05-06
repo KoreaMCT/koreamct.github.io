@@ -81,9 +81,9 @@ day2:
     - time: "11:30 ~ 12:10"
       type: "split"
       track1:
-        title: TBD
+        speaker: "전대호"
       track2:
-        title: TBD
+        speaker: "김성미"
     - time: "12:10 ~ 13:30"
       type: "full"
       class: "meal"
