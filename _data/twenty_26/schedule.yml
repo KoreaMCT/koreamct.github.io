@@ -41,8 +41,6 @@ day1:
       track1:
         speaker: "김진석"
       track2:
-        # topic is TBD — kept as fallback title
-        title: "TBD"
         speaker: "이소영"
     - time: "14:10 ~ 14:30"
       type: "full"
